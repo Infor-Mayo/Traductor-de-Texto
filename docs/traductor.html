@@ -15,7 +15,7 @@
   text-align: center;
   font-family: Arial, sans-serif;
 }
-	
+
 	body {
 		background: linear-gradient(to bottom, #ff6f69, #87f1ff);
 		animation: changeBg 10s infinite;
@@ -75,7 +75,6 @@
 			transform: translateX(0);
 		}
 	}
-	
 </style>
 
 
@@ -84,7 +83,7 @@
 <div class="container">
 	<h1>Traductor de Texto</h1>
 	<label for="input-text">Ingresa el texto:</label>
-	<textarea id="input-text" resize="both"></textarea><br><br>
+	<input type="text" id="input-text"><br><br>
 	<label for="input-lang">Idioma del texto:</label>
 	<select id="input-lang">
 		<option value="es">Español</option>
@@ -92,73 +91,6 @@
 		<option value="fr">Francés</option>
 		<option value="de">Alemán</option>
 		<option value="it">Italiano</option>
-		<option value="af">Afrikáans</option>
-<option value="sq">Albanés</option>
-<option value="am">Amárico</option>
-<option value="ar">Árabe</option>
-<option value="hy">Armenio</option>
-<option value="az">Azerbaiyano</option>
-<option value="bn">Bengalí</option>
-<option value="bs">Bosnio</option>
-<option value="bg">Búlgaro</option>
-<option value="zh-CN">Chino simplificado</option>
-<option value="zh-TW">Chino tradicional</option>
-<option value="ko">Coreano</option>
-<option value="hr">Croata</option>
-<option value="da">Danés</option>
-<option value="eo">Esperanto</option>
-<option value="et">Estonio</option>
-<option value="tl">Filipino</option>
-<option value="fi">Finlandés</option>
-<option value="ka">Georgiano</option>
-<option value="el">Griego</option>
-<option value="gu">Gujarati</option>
-<option value="ha">Hausa</option>
-<option value="iw">Hebreo</option>
-<option value="hi">Hindi</option>
-<option value="hmn">Hmong</option>
-<option value="hu">Húngaro</option>
-<option value="ig">Igbo</option>
-<option value="id">Indonesio</option>
-<option value="ga">Irlandés</option>
-<option value="is">Islandés</option>
-<option value="ja">Japonés</option>
-<option value="jw">Javanés</option>
-<option value="kn">Kannada</option>
-<option value="kk">Kazajo</option>
-<option value="km">Khmer</option>
-<option value="ky">Kirguís</option>
-<option value="ku">Kurdo</option>
-<option value="lo">Lao</option>
-<option value="la">Latín</option>
-<option value="lv">Letón</option>
-<option value="lt">Lituano</option>
-<option value="lb">Luxemburgués</option>
-<option value="mk">Macedonio</option>
-<option value="ms">Malayo</option>
-<option value="ml">Malayalam</option>
-<option value="mt">Maltés</option>
-<option value="mi">Maorí</option>
-<option value="mr">Marathi</option>
-<option value="mn">Mongol</option>
-<option value="ne">Nepalí</option>
-<option value="no">Noruego</option>
-<option value="fa">Persa</option>
-<option value="pl">Polaco</option>
-<option value="pt">Portugués</option>
-<option value="pa">Punjabí</option>
-<option value="ro">Rumano</option>
-<option value="ru">Ruso</option>
-<option value="sm">Samoano</option>
-<option value="sr">Serbio</option>
-<option value="st">Sesotho</option>
-<option value="sn">Shona</option>
-<option value="sd">Sindhi</option>
-<option value="si">Singalés</option>
-<option value="sk">Eslovaco</option>
-<option value="sl">Esloveno</option>
-<option value="so">Somalí</option>
-<option value="su">Sundanés</option>
 	</select><br><br>
 	<label for="output-lang">Idioma de traducción:</label>
 	<select id="output-lang">
@@ -167,73 +99,6 @@
 		<option value="fr">Francés</option>
 		<option value="de">Alemán</option>
 		<option value="it">Italiano</option>
-		<option value="af">Afrikáans</option>
-<option value="sq">Albanés</option>
-<option value="am">Amárico</option>
-<option value="ar">Árabe</option>
-<option value="hy">Armenio</option>
-<option value="az">Azerbaiyano</option>
-<option value="bn">Bengalí</option>
-<option value="bs">Bosnio</option>
-<option value="bg">Búlgaro</option>
-<option value="zh-CN">Chino simplificado</option>
-<option value="zh-TW">Chino tradicional</option>
-<option value="ko">Coreano</option>
-<option value="hr">Croata</option>
-<option value="da">Danés</option>
-<option value="eo">Esperanto</option>
-<option value="et">Estonio</option>
-<option value="tl">Filipino</option>
-<option value="fi">Finlandés</option>
-<option value="ka">Georgiano</option>
-<option value="el">Griego</option>
-<option value="gu">Gujarati</option>
-<option value="ha">Hausa</option>
-<option value="iw">Hebreo</option>
-<option value="hi">Hindi</option>
-<option value="hmn">Hmong</option>
-<option value="hu">Húngaro</option>
-<option value="ig">Igbo</option>
-<option value="id">Indonesio</option>
-<option value="ga">Irlandés</option>
-<option value="is">Islandés</option>
-<option value="ja">Japonés</option>
-<option value="jw">Javanés</option>
-<option value="kn">Kannada</option>
-<option value="kk">Kazajo</option>
-<option value="km">Khmer</option>
-<option value="ky">Kirguís</option>
-<option value="ku">Kurdo</option>
-<option value="lo">Lao</option>
-<option value="la">Latín</option>
-<option value="lv">Letón</option>
-<option value="lt">Lituano</option>
-<option value="lb">Luxemburgués</option>
-<option value="mk">Macedonio</option>
-<option value="ms">Malayo</option>
-<option value="ml">Malayalam</option>
-<option value="mt">Maltés</option>
-<option value="mi">Maorí</option>
-<option value="mr">Marathi</option>
-<option value="mn">Mongol</option>
-<option value="ne">Nepalí</option>
-<option value="no">Noruego</option>
-<option value="fa">Persa</option>
-<option value="pl">Polaco</option>
-<option value="pt">Portugués</option>
-<option value="pa">Punjabí</option>
-<option value="ro">Rumano</option>
-<option value="ru">Ruso</option>
-<option value="sm">Samoano</option>
-<option value="sr">Serbio</option>
-<option value="st">Sesotho</option>
-<option value="sn">Shona</option>
-<option value="sd">Sindhi</option>
-<option value="si">Singalés</option>
-<option value="sk">Eslovaco</option>
-<option value="sl">Esloveno</option>
-<option value="so">Somalí</option>
-<option value="su">Sundanés</option>
 	</select><br><br>
 	<button id="translate-button">Traducir</button><br><br>
 	<textarea id="output-text" cols="50" rows="10" ></textarea>
@@ -251,7 +116,7 @@
 
   $(document).ready(function() {
     $("#translate-button").click(function() {
-      var text = $("#input-text").val().replace(/\./g, ',');    
+      var text = $("#input-text").val();
       var inputLang = $("#input-lang").val();
       var outputLang = $("#output-lang").val();
       var url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + inputLang + "&tl=" + outputLang + "&dt=t&q=" + encodeURIComponent(text);
@@ -296,7 +161,7 @@
 	<script>
 		$(document).ready(function() {
 			$("#translate-button").click(function() {
-				var text = $("#input-text").val().replace(/\./g, ',');
+				var text = $("#input-text").val();
 				var inputLang = $("#input-lang").val();
 				var outputLang = $("#output-lang").val();
 				var url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + inputLang + "&tl=" + outputLang + "&dt=t&q=" + encodeURIComponent(text);
